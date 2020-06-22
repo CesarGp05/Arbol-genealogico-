@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	int n, opcion;
+	
+	do{
+	 printf("\n\n------------ MENU DE ARBOL GENEALOGICO----------");
+		printf("\n\n 1. Abuelos");
+        printf("\n 2. Tios");
+        printf("\n 3. Primos");
+        printf("\n 4. Sobrinos");
+        printf("\n 5. Padres");
+        printf("\n 6. Hermano y yo");
+        printf("\n 7. Arbol Genealogico");
+        printf("\n 8. Salir");
+      
+		 printf("\n\n Selecciona una opcion: ");
+                
+            scanf("%d", &opcion);
+
+        switch (opcion)
+        {
+            case 1: printf("\n                                                 ----------Abuelos Maternos----------");
+                    printf("\n \n                                                 Luis(Abuelo)----Juana(Abuela) ");
+                    break;
+
+            case 2: printf("\n-----------------------------------------------------------Tios--------------------------------------------------------------");
+                    printf("\n\n   Martha--|--Rodrigo       Alejandro       Erika--|--Jose       Leticia----Benjamin       Maria--|--Fernando       Juan");
+                    break;
+
+            case 3: printf("\n---------------------------------------------------Primos-------------------------------------------------");
+                    printf("\n\n   Claudia--|--Edgar  Martha  Rocio--|--Luis       Erick     Diana      Jessica--|--Angel    Fernando ");
+                    break;
+                    
+            case 4: printf("\n-------------------------Sobrinos-----------------------------");
+                    printf("\n\n   Mateo      Santiago      Rodrigo       Leonardo    Elias");
+                    break;
+                    
+			case 5: printf("\n                                                    ---------Padres----------");
+                    printf("\n\n                                                       Napoleon----Rosa");
+                    break;
+                    	    
+            case 6: printf("\n                                                  ---------Hermano y yo----------");
+                    printf("\n\n                                                        Jonathan    Cesar");
+                    break; 
+                 
+            case 7: printf("                                                                          --------Abuelos----------");
+                    printf("\n                                                             Luis(Abuelo Materno)--|--Juana(Abuela Materna)");
+                    printf("\n                    ------------------------------------------------------------------------------------------------------------------------------------------------");
+                    printf("\n                    |                             |              |                       |               |                           |                             |");
+                    printf("\n            Martha--|--Rodrigo                 Alejandro       Erika--|--Jose            |            Leticia----Benjamin          Maria--|--Fernando            Juan ");
+                    printf("\n |------------------|----------------|                           |---------|             |                                         |--------------------|        ");
+                    printf("\nClaudia--|--Edgar  Martha  Rocio--|--Luis                      Erick     Diana           |                                       Jessica--|--Angel    Fernando             ");
+                    printf("\n  |-----------|                   |                                                      |                                         |-----------|                                         ");
+                    printf("\nMateo      Santiago            Rodrigo                                                   |                                        Leonardo    Elias          ");
+                    printf("\n                                                                                         | ");
+					printf("\n                                                                     ------------------Padres---------------");        
+                    printf("\n                                                                                 Napoleon--|--Rosa");
+                    printf("\n                                                                                    |----------|");
+					printf("\n                                                                                  Jonathan    Cesar      ");  
+					  		break;
+             
+       
+			case 8: printf("\n Fin");
+			break;
+                   default: printf("   invalido"); 
+                  break;  	    	    	                    
+         }
+
+    } while ( opcion != 8 );
+
+    return 0;
+}
